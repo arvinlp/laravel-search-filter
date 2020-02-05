@@ -1,5 +1,7 @@
 # laravel-search-filter
 
+<a href="https://arvinlp.github.io/laravel-search-filter/" title="Laravel Search Filter">Laravel Search Filter page on GitHub</a>
+
 <h2>How Use ?</h2>
 <p>in your controller instead of use routine method like :</p>
 <pre>
@@ -55,3 +57,6 @@ $flight = App\SearchFilter::apply( $request, new Flight, 'all', 'captain' );
     $relation = ['role','access'];
   </pre>
 </p>
+
+<h4>Thank you</h4>
+<h5>Arvin Loripour</h5>
