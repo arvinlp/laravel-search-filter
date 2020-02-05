@@ -57,6 +57,6 @@ $flight = App\SearchFilter::apply( $request, new Flight, 'all', 'captain' );
     $relation = ['role','access'];
   </pre>
 </p>
-
+<hr>
 <h4>Thank you</h4>
 <h5>Arvin Loripour</h5>
