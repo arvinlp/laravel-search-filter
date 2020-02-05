@@ -25,13 +25,13 @@ $flight = App\SearchFilter::apply( $request, new Flight, 'all', 'captain' );
 <h2>Function Arguments</h2>
 <h3>SearchFilter::apply( Request, Model, Query Type, Relationships )</h3>
 <p>
-  <strong>Request : <font color="red">Required</font></strong>
+  <strong>Request(Required) : </strong>
   Illuminate\Http\Request $request;
   Any request laravel can supported like Get, Post, Put, etc.
   But for using search and filters using Get method !
 </p>
 <p>
-  <strong>Model : <font color="red">Required</font></strong>
+  <strong>Model(Required) : </strong>
   Illuminate\Database\Eloquent\Model;
   model should be extened of Eloquent Model. and just passing to function not more!
 </p>
