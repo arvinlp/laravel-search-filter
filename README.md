@@ -58,5 +58,14 @@ $flight = App\SearchFilter::apply( $request, new Flight, 'all', 'captain' );
   </pre>
 </p>
 <hr>
+<h2>Add Custom Request by PHP And Passed to Class</h2>
+<p>For Pass Custom Request to Class, you can using merge function in Request Class.<br> and just pass array with merge function to request :)</p>
+  <pre>
+    $request->merge([
+      "order_by" => "name",
+      "order" => "desc"
+    ]);
+  </pre>
+<hr>
 <h4>Thank you</h4>
 <h5>Arvin Loripour</h5>
