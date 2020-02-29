@@ -58,6 +58,29 @@ $flight = App\SearchFilter::apply( $request, new Flight, 'all', 'captain' );
   </pre>
 </p>
 <hr>
+<h2>Add New Custom Filter</h2>
+<p>
+  in directory "Filters" you can add new filter class.new filter class should be implements Filter and use Eloquent Builder for using functions related.
+  also if you need filter like father_name in your new filter class name is FatherName, under line removed and first character is upper.
+</p>
+<p>for example :</p>
+<pre>
+namespace App\SearchFilters\Filters;
+use Illuminate\Database\Eloquent\Builder;
+class NewFilter implements Filter{
+    /**
+     * Apply a given search value to the builder instance.
+     *
+     * @param Builder $builder
+     * @param mixed $value
+     * @return Builder $builder
+     */
+    public static function apply(Builder $builder, $value){
+        return $builder->where('new_filter', "LIKE", "%".$value."%" );
+    }
+}
+</pre>
+<hr>
 <h2>Add Custom Request by PHP And Passed to Class</h2>
 <p>For Pass Custom Request to Class, you can using merge function in Request Class.<br> and just pass array with merge function to request :)</p>
   <pre>
